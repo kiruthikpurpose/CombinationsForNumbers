@@ -1,0 +1,63 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+sqlalchemy==2.0.30
+alembic==1.13.1
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+
+redis==5.0.4
+celery==5.4.0
+flower==2.0.1
+
+httpx==0.27.0
+tenacity==8.3.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Document processing
+pypdf2==3.0.1
+pdfplumber==0.11.1
+python-docx==1.1.2
+python-pptx==0.6.23
+openpyxl==3.1.2
+pandas==2.2.2
+tabulate==0.9.0
+Pillow==10.3.0
+pytesseract==0.3.10
+
+# AI / ML
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0
+chromadb==0.5.0
+numpy==1.26.4
+scipy==1.13.0
+scikit-learn==1.4.2
+
+# LangChain ecosystem
+langchain==0.2.1
+langchain-community==0.2.1
+langchain-openai==0.1.7
+langgraph==0.1.1
+tiktoken==0.7.0
+
+# Graph
+neo4j==5.20.0
+networkx==3.3
+
+# Utilities
+python-dotenv==1.0.1
+loguru==0.7.2
+rich==13.7.1
+typer==0.12.3
+jinja2==3.1.4
+aiofiles==23.2.1
+watchdog==4.0.0
+pytest==8.2.0
+pytest-asyncio==0.23.7
+pytest-cov==5.0.0
+httpx==0.27.0
+faker==25.2.0

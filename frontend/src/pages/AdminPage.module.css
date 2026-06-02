@@ -1,0 +1,74 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.pageHeader { }
+.title { font-size: 22px; font-weight: 700; color: var(--color-text); display: flex; align-items: center; gap: 10px; }
+.subtitle { font-size: 13px; color: var(--color-text-muted); margin-top: 4px; }
+
+.statsRow { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+
+.statCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statIcon { width: 36px; height: 36px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; }
+.statValue { font-size: 26px; font-weight: 700; color: var(--color-text); letter-spacing: -0.5px; }
+.statLabel { font-size: 12px; color: var(--color-text-muted); }
+
+.panels { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.panel {
+  flex: 1;
+  min-width: 280px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.panelTitle { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-text); margin-bottom: 16px; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table th { text-align: left; font-size: 11px; font-weight: 600; color: var(--color-text-muted); padding: 0 0 10px; text-transform: uppercase; letter-spacing: 0.05em; }
+.table td { padding: 10px 0; border-bottom: 1px solid var(--color-border); vertical-align: middle; font-size: 13px; color: var(--color-text); }
+.table tr:last-child td { border-bottom: none; }
+
+.tdName { font-weight: 500; }
+.tdEmail { color: var(--color-text-muted); font-size: 12px; }
+.tdDate { color: var(--color-text-muted); font-size: 12px; }
+
+.roleBadge { font-size: 11px; background: rgba(99, 102, 241, 0.1); color: #a5b4fc; border-radius: 4px; padding: 2px 8px; text-transform: capitalize; }
+
+.statusDot { font-size: 12px; font-weight: 500; }
+.active { color: #10b981; }
+.inactive { color: #64748b; }
+
+.auditList { display: flex; flex-direction: column; gap: 6px; max-height: 360px; overflow-y: auto; }
+
+.auditItem { padding: 10px 12px; background: var(--color-bg-elevated); border-radius: var(--radius-sm); }
+.auditAction { font-size: 13px; color: var(--color-text); font-weight: 500; margin-bottom: 3px; }
+.auditMeta { display: flex; justify-content: space-between; }
+.auditResource { font-size: 11px; color: var(--color-primary); text-transform: capitalize; }
+.auditTime { font-size: 11px; color: var(--color-text-muted); }
+
+.emptyMsg { font-size: 13px; color: var(--color-text-muted); text-align: center; padding: 24px 0; }
+
+.breakdownPanel {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.breakdown { display: flex; flex-direction: column; gap: 10px; }
+
+.breakdownItem { display: flex; align-items: center; gap: 12px; }
+.breakdownFormat { font-size: 12px; font-weight: 700; color: var(--color-text-muted); min-width: 50px; text-align: right; }
+.breakdownBar { flex: 1; height: 6px; background: rgba(99, 102, 241, 0.1); border-radius: 100px; overflow: hidden; }
+.breakdownFill { height: 100%; background: linear-gradient(90deg, var(--color-primary), var(--color-secondary)); border-radius: 100px; transition: width 0.5s ease; }
+.breakdownCount { font-size: 12px; font-weight: 600; color: var(--color-text); min-width: 30px; }
